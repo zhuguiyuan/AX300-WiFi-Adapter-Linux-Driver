@@ -1,5 +1,12 @@
 # AX300-WiFi-Adapter-Linux-Driver
 
+CHANGELOG
+
+- 20250809：Debian 13 内核版本升到了 6.12。有若干函数签名变化，已做了更新。
+  目前代码应该能同时适用 Debian 12 和 Debian 13。
+
+---
+
 适用于 Tenda W311MIv6.0 USB 无线网卡（可能也适用于 Tenda U2，我没测过，
 但它们的确是同一个驱动）。本仓库将其 deb 包解包并适配 Debian 12 系统。
 
