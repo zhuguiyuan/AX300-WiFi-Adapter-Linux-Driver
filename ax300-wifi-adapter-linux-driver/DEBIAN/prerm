@@ -4,16 +4,14 @@ udevadm control --reload
 echo "Uninstall aic8800 wifi driver!!!!!"
 rmmod aic8800_fdrv
 rmmod aic_load_fw
-cd /usr/src/tenda/aic8800/drivers/aic8800/aic8800_fdrv/
+cd /usr/src/AIC8800/drivers/aic8800/aic8800_fdrv/
 make clean
 make uninstall
-cd /usr/src/tenda/aic8800/drivers/aic8800/aic_load_fw/
+cd /usr/src/AIC8800/drivers/aic8800/aic_load_fw/
 make clean
 make uninstall
-cd /usr/src/tenda/aic8800/aicrf_test
-make clean
-make uninstall
+rm -rf /lib/firmware/aic8800D80/
 rm -rf /lib/firmware/aic8800DC/
+rm -rf /usr/src/AIC8800/
 rm -rf /AIC8800/
-rm -rf /usr/src/tenda/
 #exit 0
